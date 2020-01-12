@@ -1,12 +1,12 @@
-@Library("pipeline-shared-lib") _
+@Library("pipeline-shared-lib") _ //underscore to import all variables
 
 pipeline {
     agent any
     stages{
         stage('Build'){
             steps{
-                execMaven '--help'
-				execMaven()
+                execMaven '--help' //passing the parameter
+				execMaven() //default paramater
             }         
         }
     }
