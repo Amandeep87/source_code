@@ -1,5 +1,5 @@
 @Library("pipeline-shared-lib")
-import com.acceleratedskillup.*;
+import com.acceleratedskillup.*; //importing package which is found under src
 
 
 pipeline {
@@ -8,7 +8,7 @@ pipeline {
         stage('Build'){
             steps{
                 script{
-					def calculator = new Calculator()					
+					def calculator = new Calculator()	//create calculator object first to call add function				
                     println calculator.add(1,2)
                 }
             }         
