@@ -1,5 +1,5 @@
 @Library("pipeline-shared-lib")
-import com.acceleratedskillup.*;
+import com.acceleratedskillup.*; //import the pacakge of the class we want to use
 
 pipeline {
     agent any
@@ -7,8 +7,8 @@ pipeline {
         stage('Build'){
             steps{
                 script{
-					def car = new Car(this)	
-					car.numberOfDoors = 4
+					def car = new Car(this)	//creating a car object sending this which represents current pipeline object
+					car.numberOfDoors = 4 /asigning values
 					car.brand="brandX"
 					car.model="modelY"
                     car.printOutCar()
