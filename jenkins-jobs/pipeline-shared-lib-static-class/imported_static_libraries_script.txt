@@ -23,7 +23,7 @@ pipeline {
         stage('Build'){
             steps{
                 script{
-					library ("pipeline-shared-lib").com.acceleratedskillup.ValidatorUtils.validateInput(this)
+					library ("pipeline-shared-lib").com.acceleratedskillup.ValidatorUtils.validateInput(this) //loading the library dynamically.
                 }
             }         
         }
