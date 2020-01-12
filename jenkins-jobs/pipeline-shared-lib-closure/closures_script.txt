@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                executeInScript ({
+                executeInScript ({ //sending a block of code. printing env variables.
                     sh "printenv"
                 })
             }         
