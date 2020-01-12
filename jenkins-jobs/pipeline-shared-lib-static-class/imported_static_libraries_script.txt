@@ -1,5 +1,5 @@
 @Library("pipeline-shared-lib")
-import static com.acceleratedskillup.ValidatorUtils.*;
+import static com.acceleratedskillup.ValidatorUtils.*; //importing all static methods
 
 pipeline {
     agent any
@@ -7,7 +7,7 @@ pipeline {
         stage('Build'){
             steps{
                 script{
-					validateInput(this)
+					validateInput(this) //validateInput function is called directly
                 }
             }         
         }
