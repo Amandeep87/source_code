@@ -1,4 +1,4 @@
-@Grab('org.apache.commons:commons-lang3:3.7')
+@Grab('org.apache.commons:commons-lang3:3.7')//import library. 
 import org.apache.commons.lang3.StringUtils
 
 pipeline {
@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                echo StringUtils.upperCase("hello world")
+                echo StringUtils.upperCase("hello world")//no script is used
             }         
         }
     }
